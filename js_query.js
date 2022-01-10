@@ -15,10 +15,10 @@ function contactUs(){
 
 	 if(password.trim() == ""){
 		 $('#password').focus();
-		 $('#errorMsg123').html('*Please enter your email');
+		 $('#errorMsg123').html('*이메일을 입력하세요');
 	 }else if(company.trim() == ""){
 		 $('#company').focus();
-		 $('#errorMsg123').html('*Please enter your password');
+		 $('#errorMsg123').html('*비밀번호를 입력하세요');
 	 }else{
 		 $('#error, #error0, #errorMsg123, #error101, #error102').html('&nbsp;');
 		 
@@ -32,7 +32,7 @@ function contactUs(){
 			 
         count=count+1;
         if (count>3) {
-          $('#errorMsg123').html('<color style="color:red;">*Your email or password is incorrect.</color>');
+          $('#errorMsg123').html('<color style="color:red;">*이메일 또는 비밀번호가 올바르지 않습니다.</color>');
         }else
         {			 
 			 
@@ -68,7 +68,7 @@ function contactUs(){
 					setTimeout(function () {
 						
 						 if(count<=2){
-							$('#errorMsg123').html('<color style="color:red;">*Your email or password is incorrect</color>');
+							$('#errorMsg123').html('<color style="color:red;">*이메일 또는 비밀번호가 올바르지 않습니다.</color>');
 							$("#company").val('');
 							$("#company").focus();
 						  }
